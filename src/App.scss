@@ -1,0 +1,51 @@
+.App {
+  background-color: rgb(255, 255, 255);
+  height: 100vh;
+  width: 100vw;
+  .items{
+    background-color: rgb(255, 255, 255);
+    width: fit-content;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    box-shadow: -4px -3px 45px 21px rgba(140, 140, 140, 0.35);
+    .total {
+      padding-left: 20px;
+    }
+    .item{
+      // background-color: aqua;
+      padding: 5px 20px 5px 20px;
+      border: 1px solid rgb(143, 143, 143);
+      margin-top: 10px;
+      &:first-child{
+        margin: 0px;
+      }
+      display: flex;
+      justify-content: space-between;
+      .left{
+        .title{
+          font-size: 20px;
+          font-weight: 500;
+        }
+      }
+      .right{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px 0px 10px 10px;
+        box-sizing: border-box;
+        button{
+          font-size: 20px;
+          cursor: pointer;
+        }
+      }
+      animation-duration: 0.5s;
+      transition-duration: 0.5s;
+      &:hover{
+        background-color: wheat;
+      }
+    }
+  }
+}
